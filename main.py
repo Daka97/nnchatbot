@@ -13,6 +13,7 @@ with open("intents.json") as file:
     data = json.load(file)
 
 try:
+    x
     with open("data.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
 except:
@@ -74,7 +75,8 @@ model = tflearn.DNN(net)
 # model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
 
 try:
-    model.load("model.tflearn")
+    # x
+    # model.load("model.tflearn")
     model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
 except:
     model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
@@ -103,7 +105,7 @@ def chat():
         results = model.predict([bag_of_words(inp, words)])[0]
         results_index = numpy.argmax(results)
         tag = labels[results_index]
-        if results[results_index] > 0.8:
+        if results[results_index] > 0.7:
             for tg in data["intents"]:
                 if tg["tag"] == tag:
                     responses = tg["responses"]
