@@ -1,0 +1,48 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "feeling",
+         "patterns": ["How are you", "How do you feel?", "Are you ok?"],
+         "responses": ["I am fine and you?", "I am Great, what about you?", "Feeling good today, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["how old", "how old is daulet", "what is your age", "how old are you", "age?"],
+         "responses": ["I am 18 years old!", "18 years young!"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me Daulet.", "I'm Daulet!", "I'm Daulet, studying in Seoultech."],
+         "context_set": ""
+        },
+        {"tag": "shop",
+         "patterns": ["Id like to buy something", "what do you sell", "what do you do?"],
+         "responses": ["We have online shopping website!", "We sell a lot of different clothing stuff", "Ask me to recommend you something to buy"],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["when are you open", "what are your hours", "hours of operation", "open time"],
+         "responses": ["We are open 24/7! Feel free to shop anytime"],
+         "context_set": ""
+        },
+        {"tag": "recommend",
+         "patterns": ["Can you recommend", "Recommend me something", "i dont know what to buy", "Clothes"],
+         "responses": ["I have a lot of cool clothing, would you like to see some hoodies? [some link here]", "T-shirts, shoes, jeans check them here [insert link] "],
+         "context_set": ""
+        },
+        {"tag": "Male",
+         "patterns": ["Male clothes", "Men", "Men outfit"],
+         "responses": ["For male clothes, please visit here[link]"],
+         "context_set": ""
+        }
+    ]
+}
